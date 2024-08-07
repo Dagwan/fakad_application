@@ -1,0 +1,94 @@
+/* src/pages/LogoutPopup.css */
+
+.logout-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logout-popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons container */
+  .logout-popup-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Buttons styling */
+  .logout-popup-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Confirm button */
+  .logout-popup-buttons button:first-child {
+    background-color: #28a745; 
+    color: white;
+  }
+  
+  /* Cancel button */
+  .logout-popup-buttons button:last-child {
+    background-color: #28a745; 
+    color: white;
+  }
+  
+  /* Hover effects */
+  .logout-popup-buttons button:first-child:hover {
+    background-color: #e67300; 
+  }
+  
+  .logout-popup-buttons button:last-child:hover {
+    background-color: #e67300; 
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .logout-popup {
+      width: 80%;
+      padding: 15px;
+    }
+  
+    .logout-popup-buttons {
+      flex-direction: column;
+    }
+  
+    .logout-popup-buttons button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .logout-popup-buttons button:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logout-popup {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .logout-popup-buttons button {
+      padding: 8px 16px;
+    }
+  }
+  

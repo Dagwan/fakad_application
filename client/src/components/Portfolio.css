@@ -1,0 +1,71 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+  }
+
+
+/* Portfolio.css */
+
+/* Main heading styles */
+h1 {
+    font-size: 2.5rem;
+    color: #ff9800; 
+}
+
+/* Card styles */
+.card {
+    border: 1px solid #4caf50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4caf50;
+}
+
+.card-text {
+    color: #666;
+}
+
+/* Button styles */
+.btn {
+    background-color: #ff9800; 
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f57c00; 
+}
+
+/* Contact information styles */
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-info h5 {
+    font-size: 1.5rem;
+    color: #ff9800; 
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}

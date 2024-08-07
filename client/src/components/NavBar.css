@@ -1,0 +1,158 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; 
+}
+
+.top-bar-left,
+.top-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-left span,
+.top-bar-right a {
+  margin-right: 1rem;
+  color: white;
+}
+
+.top-bar-right a {
+  text-decoration: none;
+}
+
+.top-bar-right a:hover {
+  color: #ddd;
+}
+
+.top-bar .top-bar-right a {
+  margin-left: 1rem; 
+}
+
+/* Main Navigation */
+.main-nav {
+  background-color: #0A6847; 
+  font-size: 0.8rem;
+  height: 80px;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px; 
+}
+
+.main-nav .company-name {
+  font-size: 1.5rem; 
+  color: white;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo .logo-image {
+  height: 60px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.brand-logo .company-name {
+  margin: 0;
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff8c00 !important; 
+}
+
+/* Ensure Navigation is Fixed */
+.fixed-top {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Scrolled Header */
+.header.scrolled .top-bar,
+.header.scrolled .main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #222; 
+  transition: background-color 0.3s;
+}
+
+.header.scrolled .top-bar {
+  background-color: #222;
+}
+
+.header.scrolled .main-nav {
+  background-color: #0A6847; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .top-bar {
+    height: auto;
+    padding: 0px 0px; 
+  }
+
+  .brand-logo {
+    padding-left: 10px; 
+    flex-direction: column; 
+  }
+
+  .brand-logo .logo-image {
+    height: 40px; 
+    margin-right: 0; 
+  }
+
+  .brand-logo .company-name {
+    font-size: 1rem; 
+    display: block; 
+    margin-top: 5px; 
+  }
+
+  .ms-auto {
+    margin-left: 10px; 
+  }
+
+  .top-bar-left,
+  .top-bar-right {
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+
+  .top-bar-left span,
+  .top-bar-right a {
+    margin: 0.5rem 0; 
+  }
+
+  .navbar-collapse {
+    padding-left: 10px; 
+  }
+
+  .main-nav {
+    height: auto; 
+    padding: 0px 0px; 
+    position: fixed;
+  }
+}

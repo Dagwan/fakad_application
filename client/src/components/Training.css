@@ -1,0 +1,133 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* training.css */
+
+.container {
+    font-size: 1.2em;
+    color: #0A6847;
+    margin-top: 10px;
+    animation: slideInUp 5s ease;
+   
+}
+.container h1 {
+    color: #ff8c00;
+    text-transform: uppercase;
+}
+.card {
+    transition: all 0.3s ease;
+}
+
+.card-body h4 {
+    color: #0A6847;
+}
+
+.card-body {
+    background-color: #D8EFD3;
+}
+
+.card-body p {
+    color: #ff8c00;
+    font-size: 1.2rem;
+}
+
+.container .card-footer p {
+    font-size: 1rem;
+}
+
+.card-body ul li {
+    font-size: 1rem;
+}
+
+.text-primary {
+    color: #0A6847;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-footer {
+        padding: 10px 20px;
+    }
+}
+
+
+
+/* Ready to Enroll section */
+.training-container {
+    background-color: #fff; 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.training-container h2 {
+    color: #ff8c00; 
+    font-size: 2.5rem; 
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+}
+
+.training-container p {
+    color: #0A6847; 
+    font-size: 1.3rem; 
+    margin-bottom: 30px; 
+    line-height: 1.6; 
+}
+
+.training-container .btn-primary {
+    background-color: #0A6847; 
+    padding: 15px 40px; 
+    font-size: 1.2rem; 
+    border-radius: 25px; 
+    text-transform: uppercase; 
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; 
+}
+
+.training-container .btn-primary:hover {
+    background-color: #ffbb33; 
+    border-color: #ffbb33;
+    color: #ffffff; 
+}
+
+.training-container .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 153, 0, 0.5); 
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 1200px) {
+    .training-container {
+        padding: 30px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .training-container h2 {
+        font-size: 2rem; 
+    }
+
+    .training-container p {
+        font-size: 1rem; 
+    }
+
+    .training-container .btn-primary {
+        padding: 12px 30px; 
+        font-size: 1rem; 
+    }
+}

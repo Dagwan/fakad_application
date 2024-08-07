@@ -1,0 +1,31 @@
+/* Back to Top */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .back-to-top button {
+    background-color: #ff8c00;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .back-to-top button:hover {
+    background-color: #0A6847;
+    transform: translateY(-2px);
+  }
