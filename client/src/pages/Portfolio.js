@@ -100,6 +100,17 @@ const Portfolio = () => {
 
                 {/* Cards */}
                 <Row>
+                <Col md={4} className="mb-4">
+                        <Card>
+                            <Card.Body>
+                                <Card.Title><HiOutlineDocumentText /> Fakad Infotech Centre</Card.Title>
+                                <Card.Text>
+                                Fakad Infotech Centre is a leading computer business center offering comprehensive services.
+                                </Card.Text>
+                                <a href="https://fakad-infotech-centre.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Visit Website</a>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                     <Col md={4} className="mb-4">
                         <Card>
                             <Card.Body>

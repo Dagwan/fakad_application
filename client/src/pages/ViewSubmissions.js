@@ -7,7 +7,7 @@ const ViewSubmissions = () => {
 
   useEffect(() => {
     // Fetch submissions from API
-    axios.get('http://localhost:8080/application-form/')
+    axios.get('https://fakad-student-application.onrender.com/application-form/')
       .then(response => setSubmissions(response.data))
       .catch(error => console.error('Error fetching submissions:', error));
   }, []);

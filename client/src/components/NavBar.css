@@ -108,6 +108,53 @@
 }
 
 /* Responsive Styles */
+@media (max-width: 1200px) {
+  .top-bar {
+    height: 60px; 
+    padding: 0 10px; 
+  }
+
+  .brand-logo {
+    padding-left: 0;
+    flex-direction: row; 
+  }
+
+  .brand-logo .logo-image {
+    height: 30px; 
+  }
+
+  .brand-logo .company-name {
+    font-size: 1rem; 
+  }
+
+  .ms-auto {
+    margin-left: 0; 
+  }
+
+  .top-bar-left,
+  .top-bar-right {
+    flex-direction: row; 
+    align-items: center;
+    margin: 0;
+  }
+
+  .top-bar-left span,
+  .top-bar-right a {
+    margin: 0 0.5rem; 
+  }
+
+  .navbar-collapse {
+    padding-left: 0;
+  }
+
+  .main-nav {
+    height: auto;
+    padding: 0;
+    position: static; 
+  }
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   .top-bar {
     height: auto;
