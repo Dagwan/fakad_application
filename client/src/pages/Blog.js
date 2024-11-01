@@ -13,7 +13,7 @@ const Blog = () => {
       try {
         const response = await axios.get('https://content.guardianapis.com/search', {
           params: {
-            'api-key': 'a5392e5d-7ba1-476c-a88f-7e84d16b0023',
+            'api-key': 'abd737a9-707f-4633-9497-6b2d7cc47f92',
             'show-fields': 'all',
             'page-size': 36
           },
