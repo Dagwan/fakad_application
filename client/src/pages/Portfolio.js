@@ -80,10 +80,10 @@ const Portfolio = () => {
 
     const toggleLayer = (index) => {
         if (expandedLayerIdx === index) {
-            setExpandedLayerIdx(null); // Close the currently open layer
+            setExpandedLayerIdx(null); 
         } else {
-            setExpandedLayerIdx(index); // Open the selected layer
-            pauseRef.current = true; // Pause the sliding animation
+            setExpandedLayerIdx(index); 
+            pauseRef.current = true; 
         }
     };
 
@@ -103,7 +103,7 @@ const Portfolio = () => {
                 <Col md={4} className="mb-4">
                         <Card>
                             <Card.Body>
-                                <Card.Title><HiOutlineDocumentText /> Fakad Infotech Centre</Card.Title>
+                                <Card.Title><HiOutlineDocumentText /> Fakad Student Application</Card.Title>
                                 <Card.Text>
                                 Fakad Infotech Centre is a leading computer business center offering comprehensive services.
                                 </Card.Text>
@@ -114,7 +114,29 @@ const Portfolio = () => {
                     <Col md={4} className="mb-4">
                         <Card>
                             <Card.Body>
-                                <Card.Title><HiOutlineDocumentText /> Dagwan Portfolio</Card.Title>
+                                <Card.Title><HiOutlineDocumentText /> Handcrafted Haven Application API </Card.Title>
+                                <Card.Text>
+                                Handcrafted Haven is an artisan-focused API that enables artisans to showcase and sell their unique products.
+                                </Card.Text>
+                                <a href="https://handcrafted-haven-api.onrender.com/api-docs/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">API Documentation</a>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={4} className="mb-4">
+                        <Card>
+                            <Card.Body>
+                                <Card.Title><HiOutlineDocumentText /> Handcrafted Haven Application </Card.Title>
+                                <Card.Text>
+                                    Application for connecting talented artisans with customers by providing a platform to showcase and sell unique handcrafted products.
+                                </Card.Text>
+                                <a href="https://handcrafted-haven-tau.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">API Documentation</a>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={4} className="mb-4">
+                        <Card>
+                            <Card.Body>
+                                <Card.Title><HiOutlineDocumentText /> Dagwan Portfolio Application</Card.Title>
                                 <Card.Text>
                                     A portfolio website showcasing creative designs and projects.
                                 </Card.Text>
@@ -122,21 +144,11 @@ const Portfolio = () => {
                             </Card.Body>
                         </Card>
                     </Col>
+
                     <Col md={4} className="mb-4">
                         <Card>
                             <Card.Body>
-                                <Card.Title><HiOutlineDocumentText /> Fakad Student Application</Card.Title>
-                                <Card.Text>
-                                    Application form API for collecting student data.
-                                </Card.Text>
-                                <a href="https://fakad-student-application.onrender.com/application-form/api-docs/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">API Documentation</a>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4} className="mb-4">
-                        <Card>
-                            <Card.Body>
-                                <Card.Title><HiOutlineDocumentText /> E-Card Application</Card.Title>
+                                <Card.Title><HiOutlineDocumentText /> E-Card API</Card.Title>
                                 <Card.Text>
                                     API for collecting customer data for business card creation.
                                 </Card.Text>
@@ -144,6 +156,7 @@ const Portfolio = () => {
                             </Card.Body>
                         </Card>
                     </Col>
+                    
                 </Row>
 
             </Container>
